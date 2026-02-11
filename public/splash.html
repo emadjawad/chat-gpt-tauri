@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatGPT</title>
+  <link rel="stylesheet" href="/splash.css" />
+</head>
+<body>
+  <div class="wrapper" id="root">
+    <div class="card">
+      <div class="inner">
+        <img class="logo" src="/ChatGPT-Logo.svg" alt="ChatGPT" />
+        <p class="title">ChatGPT</p>
+        <p class="subtitle">Starting…</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // سنستخدمها عند الإغلاق: نضيف class fade-out ثم نغلق من Rust
+    window.__fadeOut = () => document.getElementById('root')?.classList.add('fade-out');
+  </script>
+</body>
+</html>
