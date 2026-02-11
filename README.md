@@ -43,30 +43,38 @@ Install using:
 ```bash
 sudo dpkg -i ChatGPT_1.0.0_amd64.deb
 sudo apt -f install
+
 2. RPM-based distributions (.rpm)
 Supported examples:
 Fedora
 CentOS
 RHEL
-openSUSE (may require zypper)
+openSUSE (may require zypper)or:
+
 Install using:
 Fedora / RHEL:
+
 sudo rpm -i ChatGPT-1.0.0-1.x86_64.rpm
 or:
 sudo dnf install ChatGPT-1.0.0-1.x86_64.rpm
+
 3. Universal AppImage
 Works on most modern Linux distributions without installation.
 Make it executable:
+
 chmod +x ChatGPT_1.0.0_amd64.AppImage
 Run it:
 ./ChatGPT_1.0.0_amd64.AppImage
+
 No installation required.
+
 Why ChatGPT Doesn't Have an Official GUI for Linux
 As of now, OpenAI has only provided web-based access to ChatGPT through a browser. There is no official desktop application or dedicated GUI for Linux, which leaves a gap in user experience, particularly for those who prefer desktop apps over web-based interfaces.
 You can verify that there is no official Linux desktop application by checking the following resources from OpenAI:
 OpenAI Blog
 OpenAI ChatGPT API Documentation
 These sources confirm that OpenAI provides a web interface and API for accessing ChatGPT, but no dedicated application for Linux desktop users.
+
 Build From Source
 If you prefer building manually:
 Requirements:
@@ -74,8 +82,8 @@ Node.js (LTS recommended)
 Rust (latest stable)
 Tauri CLI
 Install dependencies:
+
 npm install
-Run in development mode:
 npm run tauri dev
 Build production packages:
 npm run tauri build
@@ -90,3 +98,7 @@ Runs as a native window
 It is optimized for users who want a focused ChatGPT experience without unnecessary overhead.
 License
 MIT License
+
+
+
+
